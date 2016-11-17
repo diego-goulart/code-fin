@@ -13,7 +13,7 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('admin-menu', require('./components/AdminMenu.vue'));
 
 const app = new Vue({
     el: '#app'
