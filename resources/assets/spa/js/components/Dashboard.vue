@@ -9,6 +9,7 @@
     import {User} from '../services/resources';
     export default{
         ready() {
+
             User.get().then((response) => {
                 console.log(response.data);
             });

@@ -20,8 +20,7 @@ export default {
     },
     logout(){
         let afterLogout = () => {
-            localStorage.remove(TOKEN);
-            localStorage.remove(USER);
+            this.clearAuth();
         };
 
 
@@ -44,5 +43,9 @@ export default {
     },
     check(){
         return localStorage.get(TOKEN)?true : false;
+    },
+    clearAuth(){
+        localStorage.remove(TOKEN);
+        localStorage.remove(USER);
     }
 }

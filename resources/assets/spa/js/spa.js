@@ -8,3 +8,4 @@ Vue.http.options.root = appConfig.api_url;
 
 require('./services/interceptors');
 require('./router');
+
